@@ -1,4 +1,4 @@
-@import '../../../color-variables.scss';
+@use '../../../color-variables.scss' as colors;
 .btn{
   border: none;
   border-radius: 30px;
@@ -11,14 +11,14 @@
   }
   &.primary{
     color: white;
-    background: -webkit-linear-gradient( 180deg,   $primary-color, $secondary-color);
+    background: -webkit-linear-gradient(180deg, colors.$primary-color, colors.$secondary-color);
 
   font-size: 24px;
   font-weight: bold;
   padding: 20px 40px;
   }
   &.secondary{
-    color: $primary-text;
+    color: colors.$primary-text;
     background: white;
     font-size: 16px;
     font-weight: bold;

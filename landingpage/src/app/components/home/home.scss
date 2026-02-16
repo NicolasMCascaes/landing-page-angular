@@ -1,4 +1,4 @@
-@import '../../../color-variables.scss';
+@use '../../../color-variables.scss' as colors;
 main{
   display: flex;
   flex-direction: column;
@@ -14,12 +14,12 @@ main{
   span {
     font-size: 20px;
     font-weight: 700;
-    color: $secondary-text;
+    color: colors.$secondary-text;
   }
   h1 {
     font-size: 72px;
     font-weight: 900;
-    color: $primary-text;
+    color: colors.$primary-text;
   }
 }
 
@@ -31,13 +31,13 @@ main{
   gap: 70px;
 
   .benefict-data {
-    border-bottom: 10px solid $secondary-color;
+    border-bottom: 10px solid colors.$secondary-color;
     padding-bottom: 40px;
     h2 {
       font-size: 60px;
       font-weight: 600;
       font-family: 'Roboto';
-      color: $primary-text;
+      color: colors.$primary-text;
     }
   }
   p {
@@ -47,7 +47,7 @@ main{
     b {
   font-size: 72px;
   font-style: normal;
-  background: -webkit-linear-gradient( 180deg,   $light-primary-color, $secondary-color);
+  background: -webkit-linear-gradient(180deg, colors.$light-primary-color, colors.$secondary-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -80,11 +80,11 @@ main{
   h3{
     font-weight: 700;
     font-size: 32px;
-    color: $primary-text;
+    color: colors.$primary-text;
     margin-bottom: 10px;
   }
   p{
-    color: $secondary-text;
+    color: colors.$secondary-text;
   }
 }
 @media (min-width: 1080px) {
