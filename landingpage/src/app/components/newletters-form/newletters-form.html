@@ -1,0 +1,13 @@
+<section class="form-section">
+  <div class="text">
+    <h3>Fique por dentro das tendências!</h3>
+    <p>Receba insights práticos sobre escalabilidade, arquitetura e performance para tomar decisões técnicas com segurança e acelerar o crescimento do seu produto.</p>
+  </div>
+<form [formGroup]="newsLetterForm">
+  <label for="name">Name</label>
+  <input type="text" id="name" formControlName="name">
+  <label for="email">Email</label>
+  <input type="email" id="email" formControlName="email">
+  <app-button-primary (submit)="onSubmit()" variant="secondary" btn-text="se inscreva" [disabled]="!newsLetterForm.valid" [loading]="loading()"></app-button-primary>
+</form>
+</section>
